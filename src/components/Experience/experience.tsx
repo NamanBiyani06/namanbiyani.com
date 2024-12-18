@@ -2,7 +2,7 @@
 
 export default function Experience() {
   return (
-    <div className="">
+    <div className="px-2">
       <div className="text-xl">Experience</div>
 
       <div className="text-gray-400 mt-3">Ericsson</div>

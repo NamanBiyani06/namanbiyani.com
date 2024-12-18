@@ -2,7 +2,7 @@
 
 export default function Projects() {
   return (
-    <div className="">
+    <div className="px-2">
       <div className="text-xl">Projects</div>
 
       <div className="text-gray-400 mt-3">LooGuessr</div>

@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
+        rubik: ['Rubik', 'serif'],
        },
       colors: {
         background: "var(--background)",
