@@ -1,3 +1,4 @@
+import { DM_Serif_Display } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,6 +12,7 @@ export default {
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
         rubik: ['Rubik', 'serif'],
+        dmSerifDisplay: ['DM Serif Display', 'serif'],
        },
       colors: {
         background: "var(--background)",

@@ -1,9 +1,10 @@
 import { Square, SquareArrowOutUpRight } from "lucide-react";
+import { Github, FileTextIcon, Linkedin } from "lucide-react";
 
 
 export default function Navbar() {
   return (
-    <div className="grid grid-cols-4 w-full px-2">
+    <div className="grid grid-cols-4 w-full px-2 py-4">
       {/* <div className="text-center">Github 
         <span className="inline-block translate-y-15">
             <SquareArrowOutUpRight className="translate-y-16" size={16}/>

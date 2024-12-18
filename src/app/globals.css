@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,12 +14,18 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #e1e1e1;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Helvetica;
+  font-family: rubik;
+}
+
+/* styles/globals.css */
+::selection {
+  background-color: #fdcaff; /* Custom highlight background color */
+  color: white; /* Custom color for the selected text */
 }

@@ -11,18 +11,9 @@ export default function HomePage() {
     <div className="min-h-screen">
       <div className="mx-auto my-28 max-w-lg space-y-4">
         <Header/>
-        <Navbar/>
-
-        <hr className="border-gray-600"></hr>
-
+        {/* <Navbar/> */}
         <Experience/>
-
-        <hr className="border-gray-600"></hr>
-
         <Projects/>
-
-        <hr className="border-gray-600"></hr>
-
         <Footer/>
       </div>
     </div>
