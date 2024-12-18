@@ -2,8 +2,14 @@
 
 export default function Header() {
   return (
-    <div className="font-playfair text-5xl">
-      Naman Biyani
+    <div className="">
+      <div className="text-2xl">
+        Naman Biyani
+      </div>
+
+      <div className="text-gray-400">
+        Software Engineering @ University of Waterloo
+      </div>
     </div>
   );
 }

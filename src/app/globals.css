@@ -19,5 +19,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Playfair Display', serif;
+  font-family: Helvetica;
 }
