@@ -38,7 +38,7 @@ export default function Header() {
             <a href="https://www.linkedin.com/in/naman-biyani-361b96233/" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
               <Linkedin className="" size={20} />
             </a>
-            <a href="hhttps://x.com/nbiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
+            <a href="https://x.com/nbiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300 hidden md:flex">
               <Twitter className="" size={20} />
             </a>
           </div>
