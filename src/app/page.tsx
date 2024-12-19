@@ -32,7 +32,7 @@ export default function HomePage() {
         <meta name="description" content="Naman Biyani's personal portfolio."/>
       </Head>
 
-      <div className="relative mx-auto my-28 max-w-lg space-y-4">
+      <div className="relative mx-4 md:mx-auto my-4 md:my-28 max-w-lg md:space-y-4">
         <Header/>
         {/* <Navbar/> */}
         <Experience/>
