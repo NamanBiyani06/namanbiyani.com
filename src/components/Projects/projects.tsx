@@ -2,8 +2,8 @@ import { Github, Youtube, Gamepad } from "lucide-react";
 
 export default function Projects() {
   return (
-    <div className="px-2 pt-4 pb-4">
-      <div className="underline decoration-4 decoration-pink-400/60 hover:decoration-8 hover:-translate-y-1 transition transition-all transition-transform duration-300 transition-duration-300 text-2xl mb-8 text-right mx-6 ease-in-out" data-aos="fade-up">Projects</div>
+    <div className="px-2 pt-4 pb-4" data-aos="fade-up">
+      <div className="underline decoration-4 decoration-pink-400/60 hover:decoration-8 hover:-translate-y-1 transition transition-all transition-transform duration-300 transition-duration-300 text-2xl mb-8 text-right mx-6 ease-in-out">Projects</div>
 
       <div className="grid grid-cols-3 gap-x-8 gap-y-8">
         <div className="text-sm col-span-2 text-justify" data-aos="fade-up">A full-stack social media application built to familiarize UWaterloo freshmen with their campus and surrounding areas.</div>
