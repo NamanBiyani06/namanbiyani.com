@@ -4,6 +4,7 @@ import { Fira_Code } from "next/font/google";
 export const fira = Fira_Code({
   style: "normal",
   weight: "400",
+  preload: false,
 });
 
 export default function Footer() {

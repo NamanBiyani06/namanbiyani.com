@@ -8,12 +8,14 @@ import { Github, FileTextIcon, Linkedin, BookOpen, Twitter } from "lucide-react"
 
 export const dmSerifDisplay = DM_Serif_Display({
   style: ["italic"],
-  weight: "400"
+  weight: "400",
+  preload: false,
 });
 
 export const tangerine = Tangerine({
   style: ["normal"],
   weight: "400",
+  preload: false,
 });
 
 export default function Header() {
