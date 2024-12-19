@@ -1,5 +1,4 @@
-import { Square, SquareArrowOutUpRight } from "lucide-react";
-import { Github, FileTextIcon, Linkedin } from "lucide-react";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 
 export default function Navbar() {

@@ -1,4 +1,4 @@
-import { SquareArrowOutUpRight, Github, Youtube, Gamepad } from "lucide-react";
+import { Github, Youtube, Gamepad } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -12,7 +12,7 @@ export default function Projects() {
             LooGuessr
             <span className="inline-block mx-1"><Github className="" size={12}/></span>
           </a>
-          <div className="text-gray-400 text-sm">Hack the North '24</div>
+          <div className="text-gray-400 text-sm">Hack the North 2024</div>
         </div>
 
         <div className="text-sm col-span-2 text-justify" data-aos="fade-up">A quantitative data science initiative to introduce electric bicycles into potential Uber markets using Python, Numpy, and Folium.</div>

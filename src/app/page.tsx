@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import aos from "aos";
 import "aos/dist/aos.css";
 import Header from "@/components/Header/header";
-import Navbar from "@/components/Navbar/navbar";
 import Experience from "@/components/Experience/experience";
 import Projects from "@/components/Projects/projects";
 import Footer from "@/components/Footer/footer";

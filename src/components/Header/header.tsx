@@ -2,7 +2,7 @@
 
 import React from "react";
 import { DM_Serif_Display } from "next/font/google";
-import { Tangerine, Fira_Code } from "next/font/google";
+import { Tangerine } from "next/font/google";
 import { Github, FileTextIcon, Linkedin, BookOpen, Twitter } from "lucide-react";
 
 
@@ -36,7 +36,7 @@ export default function Header() {
               <BookOpen className="" size={20} />
             </a>
             <a href="https://www.linkedin.com/in/naman-biyani-361b96233/" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
-              <FileTextIcon className="" size={20} />
+              <Linkedin className="" size={20} />
             </a>
             <a href="hhttps://x.com/nbiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
               <Twitter className="" size={20} />

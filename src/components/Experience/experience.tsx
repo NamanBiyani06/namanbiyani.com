@@ -1,8 +1,4 @@
-import { Weight } from "lucide-react";
-import { Volkhov } from "next/font/google";
-import { Briefcase } from "lucide-react";
 
-const volkhov = Volkhov({ style: 'normal', weight: '400', preload: false,});
 
 export default function Experience() {
   return (
