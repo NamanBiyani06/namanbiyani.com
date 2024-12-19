@@ -1,12 +1,13 @@
 import { Weight } from "lucide-react";
 import { Volkhov } from "next/font/google";
+import { Briefcase } from "lucide-react";
 
 const volkhov = Volkhov({ style: 'normal', weight: '400'});
 
 export default function Experience() {
   return (
     <div className={`pt-4`}>
-      <div className="text-2xl mb-6 ml-4">Experience</div>
+      <div className="text-2xl mb-6 ml-4 underline decoration-4 decoration-blue-400/60 hover:decoration-8 hover:-translate-y-1 transition transition-all transition-transform duration-300 transition-duration-300 text-2xl text-rightease-in-out">Experience</div>
 
       <div className="grid grid-cols-3 gap-x-8 gap-y-8">
         <div className="flex flex-col items-center justify-center">
