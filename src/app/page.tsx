@@ -3,10 +3,17 @@
 import { useEffect } from "react";
 import aos from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from "@vercel/analytics/next";
+// import { Metadata } from "next";
+import Head from "next/head";
 import Header from "@/components/Header/header";
 import Experience from "@/components/Experience/experience";
 import Projects from "@/components/Projects/projects";
 import Footer from "@/components/Footer/footer";
+
+// export const metadata: Metadata = {
+//   title: 'Naman Biyani'
+// };
 
 export default function HomePage() {
   useEffect(() => {
@@ -20,10 +27,10 @@ export default function HomePage() {
 
   return (
     <div className="relative min-h-screen">
-      {/*
-      <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black/50 to-transparent blur-md pointer-events-none z-10"></div>
-
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent blur-md pointer-events-none z-10"></div> */}
+      <Head>
+        <title>Naman Biyani - Site</title>
+        <meta name="description" content="Naman Biyani's personal portfolio."/>
+      </Head>
 
       <div className="relative mx-auto my-28 max-w-lg space-y-4">
         <Header/>
@@ -31,6 +38,7 @@ export default function HomePage() {
         <Experience/>
         <Projects/>
         <Footer/>
+        <Analytics/>
       </div>
     </div>
   );
