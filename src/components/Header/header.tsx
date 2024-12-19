@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { DM_Serif_Display } from "next/font/google";
 import { Tangerine, Fira_Code } from "next/font/google";
 import { Github, FileTextIcon, Linkedin, BookOpen, Twitter } from "lucide-react";
@@ -17,7 +18,7 @@ export const tangerine = Tangerine({
 
 export default function Header() {
   return (
-    <div className={``}>
+    <div className={``} data-aos="fade-up">
       <div className="text-2xl py-4 bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500 px-4 my-2 grid grid-cols-3">
         <span className="col-span-1">Naman Biyani</span>
         <span></span>
