@@ -32,10 +32,6 @@ export default function HomePage() {
         <meta name="description" content="Naman Biyani's personal portfolio."/>
       </Head>
       
-      <div className="fixed top-0 left-0 right-0 h-24 bg-gradient-to-b from-black via-transparent to-transparent opacity-80 backdrop-blur-3xl z-50 filter blur-3xl"></div>
-
-      <div className="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 backdrop-blur-3xl z-50 filter blur-3xl"></div>
-
       <div className="relative mx-4 md:mx-auto my-4 md:my-28 max-w-lg md:space-y-4">
         <Header/>
         {/* <Navbar/> */}
