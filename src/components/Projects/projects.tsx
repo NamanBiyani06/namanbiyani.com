@@ -9,7 +9,7 @@ export default function Projects() {
         <div className="text-sm col-span-2 text-justify" data-aos="fade-up">
           A full-stack social media application built to familiarize UWaterloo freshmen with their campus and surrounding areas.
           
-          <div className="flex items-center text-sm text-gray-400 text-right text-center">Winner @ Hack the North '24</div>
+          <div className="flex items-center text-sm text-gray-400 text-right text-center">Winner @ Hack the North 2024</div>
         </div>
         <div className="flex flex-col items-right justify-center text-center" data-aos="fade-up">
           <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-300 hover:scale-105" href="https://github.com/HTN-2024-LooGuessr/LooGuessr">
