@@ -28,7 +28,7 @@ export default function Header() {
             <a href="https://github.com/NamanBiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
               <Github className="" size={20} />
             </a>
-            <a href="https://www.goodreads.com/user/show/162046557-naman-biyani" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
+            <a href="/assets/NamanBiyani_1B.pdf" target="_blank" rel="nooperner noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
               <FileTextIcon className="" size={20} />
             </a>
             <a href="https://www.goodreads.com/user/show/162046557-naman-biyani" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-300">
