@@ -7,6 +7,13 @@ export default function Experience() {
 
       <div className="grid grid-cols-3 gap-x-8 gap-y-8">
         <div className="flex flex-col items-center justify-center" data-aos="fade-up">
+          <div className="">Shopify</div>
+          <div className="text-gray-400 text-sm">SWE Intern</div>
+        </div>
+        <div className="text-sm text-justify col-span-2" data-aos="fade-up">Building internal hiring and placement infrastructure for the Shopify Talent team using Ruby on Rails,
+deploying features across multi-user platform backed by a MySQL database.</div>
+
+        <div className="flex flex-col items-center justify-center" data-aos="fade-up">
           <div className="">Ericsson</div>
           <div className="text-gray-400 text-sm">SWE Intern</div>
         </div>
