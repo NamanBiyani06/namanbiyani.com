@@ -1,4 +1,4 @@
-import { Github, Youtube, Gamepad } from "lucide-react";
+import { Github, Youtube, Gamepad, ExternalLink } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -9,36 +9,61 @@ export default function Projects() {
         <div className="text-sm col-span-2 text-justify" data-aos="fade-up">
           A full-stack social media application built to familiarize UWaterloo freshmen with their campus and surrounding areas.
           
-          <div className="flex items-center text-sm text-gray-400 text-right text-center">Winner @ Hack the North 2024</div>
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 text-right text-center">Winner @ Hack the North 2024</div>
         </div>
         <div className="flex flex-col items-right justify-center text-center" data-aos="fade-up">
-          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-300 hover:scale-105" href="https://github.com/HTN-2024-LooGuessr/LooGuessr">
+          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-700 dark:hover:text-blue-300 hover:scale-105" href="https://github.com/HTN-2024-LooGuessr/LooGuessr">
             LooGuessr
             <span className="inline-block mx-1"><Github className="" size={12}/></span>
           </a>
-          <div className="text-gray-400 text-sm">Hack the North 2024</div>
+          <div className="text-gray-500 dark:text-gray-400 text-sm">Hack the North 2024</div>
+        </div>
+
+        <div className="text-sm col-span-2 text-justify" data-aos="fade-up">
+          An indoor foot traffic analytics platform that uses Bluetooth signal strength and path loss modeling to track venue occupancy in real-time.
+          
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 text-right text-center">Winner @ GeeseHacks 2025</div>
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 text-right text-center">Presented @ Socratica Symposium 2025</div>
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 text-right text-center">
+            <a 
+              href="https://www.mappedin.com/resources/blog/flockfindr-mapping-foot-traffic-with-bluetooth-and-geese/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-300"
+            >
+              Featured in a MappedIn Article
+              <span className="inline-block mx-1"><ExternalLink className="" size={12}/></span>
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col items-right justify-center text-center" data-aos="fade-up">
+          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-700 dark:hover:text-blue-300 hover:scale-105" href="https://flock-findr.vercel.app">
+            FlockFindr
+            <span className="inline-block mx-1"><ExternalLink className="" size={12}/></span>
+          </a>
+          <div className="text-gray-500 dark:text-gray-400 text-sm">GeeseHacks 2025</div>
         </div>
 
         <div className="text-sm col-span-2 text-justify" data-aos="fade-up">
           A quantitative data science initiative to introduce electric bicycles into potential Uber markets using Python, Numpy, and Folium.
 
-          <div className="flex items-center text-sm text-gray-400 text-right text-center">International qualifier out of 2,500+ competitors</div>
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 text-right text-center">International qualifier out of 2,500+ competitors</div>
         </div>
         <div className="flex flex-col items-right justify-center text-center" data-aos="fade-up">
-          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-300 hover:scale-105" href="https://youtu.be/hoDG4Qn-7Ug">
+          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-700 dark:hover:text-blue-300 hover:scale-105" href="https://youtu.be/hoDG4Qn-7Ug">
             UberBike
             <span className="inline-block mx-1"><Youtube className="" size={12}/></span>
           </a>
-          <div className="text-gray-400 text-sm">Uber Global Hackathon</div>
+          <div className="text-gray-500 dark:text-gray-400 text-sm">Uber Global Hackathon</div>
         </div>
 
         <div className="text-sm col-span-2 text-justify" data-aos="fade-up">A published browser game built through Python-based scripting in the Godot Game Engine as an exercise in Game Development and Design.</div>
         <div className="flex flex-col items-right justify-center text-center" data-aos="fade-up">
-          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-300 hover:scale-105" href="https://github.com/NamanBiyani06/RocketLander">
+          <a className="transform transition-transform transition-colors transition-all ease-in-out duration-500 transition-duration-500 hover:text-blue-700 dark:hover:text-blue-300 hover:scale-105" href="https://github.com/NamanBiyani06/RocketLander">
             Rocket Lander
             <span className="inline-block mx-1"><Gamepad className="" size={12}/></span>
           </a>
-          <div className="text-gray-400 text-sm">Design Project</div>
+          <div className="text-gray-500 dark:text-gray-400 text-sm">Design Project</div>
         </div>
       </div>
     </div>
