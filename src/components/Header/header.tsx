@@ -3,7 +3,7 @@
 import React from "react";
 import { DM_Serif_Display } from "next/font/google";
 import { Tangerine } from "next/font/google";
-import { Github, FileTextIcon, Linkedin, BookOpen, Twitter } from "lucide-react";
+import { Github, Linkedin, BookOpen, Twitter } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "@/components/ThemeProvider/theme-provider";
 
@@ -30,9 +30,6 @@ export default function Header() {
           <div className="flex gap-4 text-sm justify-center items-center">
             <a href="https://github.com/NamanBiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white">
               <Github className="text-white" size={20} />
-            </a>
-            <a href="/assets/NamanBiyani_2A.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white">
-              <FileTextIcon className="text-white" size={20} />
             </a>
             <a href="https://www.goodreads.com/user/show/162046557-naman-biyani" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white">
               <BookOpen className="text-white" size={20} />
