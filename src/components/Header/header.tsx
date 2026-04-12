@@ -23,7 +23,7 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className={``} data-aos="fade-up">
+    <div className={``}>
       <div className="text-2xl py-4 bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500 px-4 my-2 grid grid-cols-3 rounded-md text-white">
         <span className="col-span-1 text-white">Naman Biyani</span>
         <span className="text-right col-span-2 flex justify-end">
