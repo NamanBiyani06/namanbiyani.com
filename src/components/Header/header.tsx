@@ -94,7 +94,7 @@ export default function Header() {
       </div>
 
       <div className={`px-2 text-lg`}>
-        <span className={`${dmSerifDisplay.className}`}>Software Engineering</span> @ University of Waterloo
+        <span className={`${dmSerifDisplay.className}`}>Computer Science</span> @ University of Waterloo
         {/* <AtSign className="inline-block mx-2" size={16}/> */}
       </div>
     </div>
