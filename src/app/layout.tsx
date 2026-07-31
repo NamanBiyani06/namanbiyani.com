@@ -1,21 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, DM_Serif_Display, Caveat, Silkscreen } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider/theme-provider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistMono = Geist_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSerif = DM_Serif_Display({
+  variable: "--font-serif",
+  style: ["italic"],
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const caveat = Caveat({
+  variable: "--font-hand",
+  weight: ["400", "600"],
+  subsets: ["latin"],
+});
+
+const silkscreen = Silkscreen({
+  variable: "--font-pixel",
+  weight: "400",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Naman Biyani — Site",
-  description: "Designed and Developed by Naman Biyani, 2025",
+  title: "Naman Biyani",
+  description: "Naman Biyani — CS @ University of Waterloo.",
 };
 
 export default function RootLayout({
@@ -26,11 +40,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistMono.variable} ${dmSerif.variable} ${caveat.variable} ${silkscreen.variable} font-mono text-[14px] leading-relaxed antialiased`}
       >
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

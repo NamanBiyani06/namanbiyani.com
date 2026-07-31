@@ -1,4 +1,3 @@
-import { DM_Serif_Display } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -10,14 +9,20 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
-        rubik: ['Rubik', 'serif'],
-        dmSerifDisplay: ['DM Serif Display', 'serif'],
-       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        muted: "var(--muted)",
+        faint: "var(--faint)",
+        line: "var(--line)",
+        accent: "var(--accent)",
+        card: "var(--card)",
+      },
+      fontFamily: {
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
+        hand: ["var(--font-hand)", "cursive"],
+        pixel: ["var(--font-pixel)", "monospace"],
       },
     },
   },

@@ -1,30 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #f8f8e9;
-  --foreground: #171717;
+  --background: #edeade;
+  --foreground: #1d1c16;
+  --muted: #77756a;
+  --faint: #a3a194;
+  --line: rgba(29, 28, 22, 0.14);
+  --accent: #b4530a;
+  --card: rgba(29, 28, 22, 0.03);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #fafaee;
+  --background: #131311;
+  --foreground: #e9e6d8;
+  --muted: #94917f;
+  --faint: #6d6a5c;
+  --line: rgba(233, 230, 216, 0.16);
+  --accent: #e08b3d;
+  --card: rgba(233, 230, 216, 0.04);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: rubik;
-  transition: color 1.0s ease, background-color 0.6s ease;
+  transition: color 0.4s ease, background-color 0.4s ease;
 }
 
-/* styles/globals.css */
 ::selection {
-  background-color: #fdcaff; /* Custom highlight background color */
-  color: white; /* Custom color for the selected text */
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+/* section entrance: gentle fade + blur, like masonjwang.com */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: reveal 0.6s ease both;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-6deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 0.6s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* dotted link style: subtle underline that solidifies on hover */
+.link {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--faint);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--accent);
+  text-decoration-style: solid;
+  text-decoration-color: var(--accent);
+}
+
+/* hand-drawn squiggle under section headings */
+.squiggle {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
 }
