@@ -15,11 +15,11 @@ const projects: Project[] = [
     href: "https://flock-findr.vercel.app",
     icon: ExternalLink,
     event: "GeeseHacks 2025",
-    description: "An indoor foot traffic analytics platform that uses Bluetooth signal strength and path loss modeling to track venue occupancy in real-time.",
+    description: "Tracks venue occupancy in real time using Bluetooth signal strength.",
     notes: [
       { text: "Winner" },
       { text: "Presented @ Socratica Symposium 2025" },
-      { text: "Featured in a MappedIn Article", href: "https://www.mappedin.com/resources/blog/flockfindr-mapping-foot-traffic-with-bluetooth-and-geese/" },
+      { text: "Featured by MappedIn", href: "https://www.mappedin.com/resources/blog/flockfindr-mapping-foot-traffic-with-bluetooth-and-geese/" },
     ],
   },
   {
@@ -27,7 +27,7 @@ const projects: Project[] = [
     href: "https://github.com/HTN-2024-LooGuessr/LooGuessr",
     icon: Github,
     event: "Hack the North 2024",
-    description: "A full-stack social media application built to familiarize UWaterloo freshmen with their campus and surrounding areas.",
+    description: "A social app that helps UWaterloo first-years get to know campus.",
     notes: [{ text: "Winner" }, { text: "API Category" }],
   },
   {
@@ -35,7 +35,7 @@ const projects: Project[] = [
     href: "https://youtu.be/hoDG4Qn-7Ug",
     icon: Youtube,
     event: "Uber Global Hackathon",
-    description: "A quantitative data science initiative to introduce electric bicycles into potential Uber markets using Python, Numpy, and Folium.",
+    description: "Analysis of where Uber could launch e-bikes, using Python and Folium.",
     notes: [{ text: "International qualifier out of 2,500+ competitors" }],
   },
   {
@@ -43,7 +43,7 @@ const projects: Project[] = [
     href: "https://github.com/NamanBiyani06/RocketLander",
     icon: Gamepad,
     event: "Design Project",
-    description: "A published browser game built through Python-based scripting in the Godot Game Engine as an exercise in Game Development and Design.",
+    description: "A browser game built in Godot, as an exercise in game design.",
   },
 ];
 
@@ -66,9 +66,9 @@ export default function Projects() {
               </a>
               <span className="text-gray-500 dark:text-gray-400">· {event}</span>
             </div>
-            <p className="mt-1">{description}</p>
+            <p className="mt-1 text-balance">{description}</p>
             {notes && (
-              <p className="mt-1 text-gray-500 dark:text-gray-400">
+              <p className="mt-1 text-balance text-gray-500 dark:text-gray-400">
                 {notes.map((note, i) => (
                   <span key={note.text}>
                     {i > 0 && " · "}

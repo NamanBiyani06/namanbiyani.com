@@ -16,6 +16,10 @@ export default function Intro() {
         and data science at the{" "}
         <a href="https://www.ohri.ca/" target="_blank" rel="noopener noreferrer" className={`${linkClass} decoration-sky-400/30 hover:decoration-sky-400`}>Ottawa Hospital Research Institute</a>.
       </p>
+      <p>
+        Outside of work, I read a lot. You can see what I&apos;m reading on{" "}
+        <a href="https://www.goodreads.com/user/show/162046557-naman-biyani" target="_blank" rel="noopener noreferrer" className={`${linkClass} decoration-amber-400/30 hover:decoration-amber-400`}>Goodreads</a>.
+      </p>
       <p className="text-gray-500 dark:text-gray-400">
         Feel free to reach out anytime at <span className={`${fira.className} tracking-tighter`}>nbiyani [at] uwaterloo [dot] ca</span>.
       </p>

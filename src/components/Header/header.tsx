@@ -17,10 +17,10 @@ export default function Header() {
 
   return (
     <div className={``}>
-      <div className="text-2xl px-2 pt-2 pb-3 mb-3 flex items-center justify-between border-b border-gray-300 dark:border-gray-800">
-        <span>Naman Biyani</span>
+      <div className="text-xl sm:text-2xl px-2 pt-2 pb-3 mb-3 flex items-center justify-between gap-4 border-b border-gray-300 dark:border-gray-700">
+        <span className="whitespace-nowrap">Naman Biyani</span>
         <span className="flex justify-end">
-          <div className="flex gap-4 text-sm justify-center items-center text-gray-500 dark:text-gray-400">
+          <div className="flex gap-3 sm:gap-4 text-sm justify-center items-center text-gray-500 dark:text-gray-400">
             <a href="https://github.com/NamanBiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-foreground">
               <Github size={18} />
             </a>
