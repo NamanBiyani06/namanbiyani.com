@@ -1,17 +1,10 @@
 "use client";
 
 import React from "react";
-import { DM_Serif_Display } from "next/font/google";
 import { Tangerine } from "next/font/google";
 import { Github, Linkedin, BookOpen, Twitter } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "@/components/ThemeProvider/theme-provider";
-
-export const dmSerifDisplay = DM_Serif_Display({
-  style: ["italic"],
-  weight: "400",
-  preload: false,
-});
 
 export const tangerine = Tangerine({
   style: ["normal"],
@@ -24,29 +17,30 @@ export default function Header() {
 
   return (
     <div className={``}>
-      <div className="text-2xl py-4 bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500 px-4 my-2 grid grid-cols-3 rounded-md text-white">
-        <span className="col-span-1 text-white">Naman Biyani</span>
-        <span className="text-right col-span-2 flex justify-end">
-          <div className="flex gap-4 text-sm justify-center items-center">
-            <a href="https://github.com/NamanBiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white">
-              <Github className="text-white" size={20} />
+      <div className="text-2xl px-2 pt-2 pb-3 mb-3 flex items-center justify-between border-b border-gray-300 dark:border-gray-800">
+        <span>Naman Biyani</span>
+        <span className="flex justify-end">
+          <div className="flex gap-4 text-sm justify-center items-center text-gray-500 dark:text-gray-400">
+            <a href="https://github.com/NamanBiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-foreground">
+              <Github size={18} />
             </a>
-            <a href="https://www.goodreads.com/user/show/162046557-naman-biyani" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white">
-              <BookOpen className="text-white" size={20} />
+            <a href="https://www.goodreads.com/user/show/162046557-naman-biyani" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-foreground">
+              <BookOpen size={18} />
             </a>
-            <a href="https://www.linkedin.com/in/naman-biyani-361b96233/" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white">
-              <Linkedin className="text-white" size={20} />
+            <a href="https://www.linkedin.com/in/naman-biyani-361b96233/" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-foreground">
+              <Linkedin size={18} />
             </a>
-            <a href="https://x.com/nbiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white md:flex">
-              <Twitter className="text-white" size={20} />
+            <a href="https://x.com/nbiyani06" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-foreground md:flex">
+              <Twitter size={18} />
             </a>
-            <a href="https://se-webring.xyz/" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 hover:text-gray-200 text-white md:flex">
-              <Image src="/assets/logo_w.png" alt="Webring Logo" width={60} height={60} className="w-6 h-4"/>
+            <a href="https://se-webring.xyz/" target="_blank" rel="noopener noreferrer" className="flex items-center transform transition-transform ease-in-out duration-300 hover:scale-125 opacity-60 hover:opacity-100 md:flex">
+              <Image src="/assets/logo_b.png" alt="Webring Logo" width={60} height={60} className="w-6 h-4 dark:hidden"/>
+              <Image src="/assets/logo_w.png" alt="Webring Logo" width={60} height={60} className="w-6 h-4 hidden dark:block"/>
             </a>
 
             <button
               onClick={toggleTheme}
-              className="relative w-6 h-6 flex items-center justify-center transform transition-all duration-500 ease-in-out hover:scale-125 hover:text-gray-200 text-white"
+              className="relative w-6 h-6 flex items-center justify-center transform transition-all duration-500 ease-in-out hover:scale-125"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
             >
               {/* Sun Icon */}
@@ -56,7 +50,7 @@ export default function Header() {
                   : 'opacity-0 -rotate-90 scale-75'
               }`}>
                 <svg 
-                  className="w-5 h-5 text-yellow-300" 
+                  className="w-5 h-5 text-yellow-500" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                 >
@@ -94,7 +88,7 @@ export default function Header() {
       </div>
 
       <div className={`px-2 text-lg`}>
-        <span className={`${dmSerifDisplay.className}`}>Computer Science</span> @ University of Waterloo
+        <span className="font-medium">Computer Science</span> @ the University of Waterloo
         {/* <AtSign className="inline-block mx-2" size={16}/> */}
       </div>
     </div>

@@ -12,7 +12,7 @@ export default function Experience() {
         </div>
         <div className="text-sm text-justify col-span-2">Improving Shopify product recommendations on the Reranking team.</div>
 
-        <div className="flex flex-col items-center justify-center">
+        {/* <div className="flex flex-col items-center justify-center">
           <div className="">Shopify</div>
           <div className="text-gray-500 dark:text-gray-400 text-sm">SWE Intern</div>
         </div>
@@ -23,7 +23,7 @@ deploying features across multi-user platform backed by a MySQL database.</div>
           <div className="">Ericsson</div>
           <div className="text-gray-500 dark:text-gray-400 text-sm">SWE Intern</div>
         </div>
-        <div className="text-sm text-justify col-span-2">Developed a full-stack internal report generation tool for the CloudRAN team to increase data retention, targeted at 3,500+ Ericsson developers and testers.</div>
+        <div className="text-sm text-justify col-span-2">Developed a full-stack internal report generation tool for the CloudRAN team to increase data retention, targeted at 3,500+ Ericsson developers and testers.</div> */}
 
         <div className="flex flex-col items-center justify-center text-center">
           <div className="">Ottawa Hospital Research Institute</div>
@@ -31,7 +31,7 @@ deploying features across multi-user platform backed by a MySQL database.</div>
         </div>
         <div className="text-sm col-span-2 text-justify">Focusing on large-scale patient data with the goal of validating the Kidney Failure Risk Equation (KFRE). Algorithmically analyzed 2,500+ patient datasets across 50+ dimensions.</div>
 
-        <div className="flex flex-col items-left justify-center text-center">
+        {/* <div className="flex flex-col items-left justify-center text-center">
           <div className="">FIRST Robotics 8729</div>
           <div className="text-gray-500 dark:text-gray-400 text-sm">Software Coordinator</div>
         </div>
@@ -41,7 +41,7 @@ deploying features across multi-user platform backed by a MySQL database.</div>
           <div className="">City of Ottawa</div>
           <div className="text-gray-500 dark:text-gray-400 text-sm">Lifeguard</div>
         </div>
-        <div className="text-sm col-span-2 text-justify">Maintaining a safe swimming environment and guiding children aged 6-18 through swim stroke development.</div>
+        <div className="text-sm col-span-2 text-justify">Maintaining a safe swimming environment and guiding children aged 6-18 through swim stroke development.</div> */}
       </div>
     </div>
   );

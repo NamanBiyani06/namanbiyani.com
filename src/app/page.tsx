@@ -4,7 +4,8 @@ import { Analytics } from "@vercel/analytics/next";
 // import { Metadata } from "next";
 import Head from "next/head";
 import Header from "@/components/Header/header";
-import Experience from "@/components/Experience/experience";
+import Intro from "@/components/Intro/intro";
+// import Experience from "@/components/Experience/experience";
 import Projects from "@/components/Projects/projects";
 import Footer from "@/components/Footer/footer";
 
@@ -23,7 +24,8 @@ export default function HomePage() {
       <div className="relative mx-4 md:mx-auto my-4 md:my-28 max-w-lg md:space-y-4">
         <Header/>
         {/* <Navbar/> */}
-        <Experience/>
+        <Intro/>
+        {/* <Experience/> */}
         <Projects/>
         <Footer/>
         <Analytics/>
