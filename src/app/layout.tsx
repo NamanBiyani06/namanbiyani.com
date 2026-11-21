@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Naman Biyani — Site",
+  title: "Naman Biyani",
   description: "Designed and Developed by Naman Biyani, 2025",
 };
 
