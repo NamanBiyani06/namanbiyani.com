@@ -1,6 +1,6 @@
 import { fira } from "@/components/Footer/footer";
 
-const linkClass = "underline decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out";
+const linkClass = "underline decoration-2 underline-offset-4";
 
 export default function Intro() {
   return (

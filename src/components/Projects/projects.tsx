@@ -47,7 +47,7 @@ const projects: Project[] = [
   },
 ];
 
-const linkClass = "underline decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out";
+const linkClass = "underline decoration-2 underline-offset-4";
 
 export default function Projects() {
   return (
@@ -61,7 +61,7 @@ export default function Projects() {
               <a href={href} target="_blank" rel="noopener noreferrer" className={`text-base ${linkClass} decoration-blue-400/30 hover:decoration-blue-400`}>
                 {name}
               </a>
-              <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`${name} link`} className="self-center text-gray-400 hover:text-blue-400 transition-colors duration-300 ease-in-out">
+              <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`${name} link`} className="self-center text-gray-400 hover:text-blue-400">
                 <Icon size={12} />
               </a>
               <span className="text-gray-500 dark:text-gray-400">· {event}</span>

@@ -16,11 +16,20 @@
   --foreground: #fafaee;
 }
 
+/* one uniform pace for theme changes everywhere — text, links, icons,
+   borders — so nothing leads or lags when the theme flips */
+*,
+::before,
+::after {
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease, text-decoration-color 0.3s ease,
+    transform 0.3s ease, opacity 0.3s ease;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: rubik;
-  transition: color 1.0s ease, background-color 0.6s ease;
 }
 
 /* styles/globals.css */
